@@ -1,4 +1,5 @@
 import { Button } from "../Button/Button";
+import { assets } from "../../assets";
 import { HeroIllustrations } from "./HeroIllustrations";
 
 type HeroProps = {
@@ -8,21 +9,29 @@ type HeroProps = {
 export function Hero({ onRsvp }: HeroProps) {
   return (
     <section
-      className="relative w-full overflow-x-hidden overflow-y-visible pt-8 pb-12 sm:overflow-visible sm:pt-24 sm:pb-24"
-      style={{ minHeight: "760px" }}
+      className="relative w-full overflow-x-hidden overflow-y-visible pt-8 pb-4 sm:min-h-[760px] sm:overflow-visible sm:pt-24 sm:pb-24"
       aria-labelledby="hero-title"
     >
+      <div className="absolute left-4 top-4 z-10 sm:hidden" aria-hidden="true">
+        <img
+          src={assets.headerStickyNote}
+          alt=""
+          className="h-auto w-[min(190px,49vw)]"
+        />
+      </div>
+
+      <div
+        className="pointer-events-none absolute inset-x-0 top-8 z-0 h-[420px] sm:hidden"
+        aria-hidden="true"
+      >
+        <HeroIllustrations />
+      </div>
+
       <div className="pointer-events-none absolute inset-x-0 top-24 bottom-0 z-0 hidden sm:block" aria-hidden="true">
         <HeroIllustrations />
       </div>
 
-      <div className="relative z-10 mx-auto flex max-w-[1440px] flex-col items-center gap-4 px-4 text-center sm:mt-[324px] sm:gap-12 sm:px-[clamp(16px,12vw,420px)]">
-        <div
-          className="relative sm:hidden"
-          style={{ width: "100vw", marginLeft: "calc(50% - 50vw)" }}
-        >
-          <HeroIllustrations />
-        </div>
+      <div className="relative z-10 mx-auto mt-[420px] flex max-w-[1440px] flex-col items-center gap-4 px-4 text-center sm:mt-[324px] sm:gap-12 sm:px-[clamp(16px,12vw,420px)]">
         <div>
           <h1
             id="hero-title"

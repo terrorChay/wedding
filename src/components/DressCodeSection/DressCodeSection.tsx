@@ -4,7 +4,7 @@ import { SectionWithUnderline } from "../SectionWithUnderline/SectionWithUnderli
 
 const LADIES_COLORS = ["#DCAEAE", "#688274", "#D0C3E4", "#5A633A", "#C47A62"];
 
-const GENTLEMEN_COLORS = ["#D2B48C", "#D3D3D3", "#1F305E", "#707657", "#AED9E5"];
+const GENTLEMEN_COLORS = ["#D2B48C", "#C47A62", "#1F305E", "#707657", "#AED9E5"];
 
 export function DressCodeSection() {
   return (
