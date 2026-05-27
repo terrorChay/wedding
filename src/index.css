@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Sunless Day";
+  src: url("/fonts/sunless-day.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-bg: #fff9f1;
+  --color-primary: #163047;
+  --color-secondary: #e86d87;
+  --color-secondary-hover: #ef99ab;
+  --color-secondary-muted: #fdf0f3;
+  --color-secondary-dark: #d1627a;
+  --color-tertiary: #8a9a5b;
+  --color-neutral: #2e2a26;
+  --color-display: #31323f;
+
+  --font-body: "Shantell Sans", system-ui, sans-serif;
+  --font-sunless: "Sunless Day", cursive;
+
+  --radius-pill: 48px;
+  --radius-button: 32px;
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --shadow-header: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Keep anchor targets from hiding under the fixed header */
+  scroll-padding-top: 120px;
+}
+
+section[id] {
+  scroll-margin-top: 120px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-bg);
+  color: var(--color-neutral);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
