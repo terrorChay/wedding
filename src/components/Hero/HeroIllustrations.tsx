@@ -273,8 +273,122 @@ function IlyaSide() {
 export function HeroIllustrations() {
   return (
     <>
-      <MariSide />
-      <IlyaSide />
+      <div className="relative mx-auto h-[420px] w-[390px] overflow-visible sm:hidden">
+        <div
+          className="pointer-events-none absolute left-0 top-0 h-[504px] w-[470px] origin-top-left scale-[0.83]"
+          aria-hidden="true"
+        >
+          {/* Mari (mobile) */}
+          <img
+            src={assets.hero.mariVector9}
+            alt=""
+            className="absolute left-[10.16px] top-[129px] h-[40.864px] w-[41.992px] -rotate-[36.16deg]"
+          />
+          <img
+            src={assets.hero.mariVector5}
+            alt=""
+            className="absolute left-[198.43px] top-[365.18px] h-[62.339px] w-[39.572px]"
+          />
+          <div
+            className="absolute left-[192.9px] top-[170.76px] h-[21.201px] w-[7.744px] rounded-[18px] bg-[#61578b]"
+            style={{ transform: "rotate(36.16deg)" }}
+          />
+          <div
+            className="absolute left-[201.25px] top-[189.05px] h-[30.969px] w-[7.744px] rounded-[18px] bg-[#61578b]"
+            style={{ transform: "rotate(70.09deg)" }}
+          />
+          <div
+            className="absolute left-[205.2px] top-[214.66px] h-[25.204px] w-[7.744px] rounded-[18px] bg-[#61578b]"
+            style={{ transform: "rotate(95.73deg)" }}
+          />
+          <div className="absolute left-0 top-[157.07px] h-[338.78px] w-[206.172px] overflow-visible">
+            <img
+              src={assets.mariPortrait}
+              alt=""
+              className="absolute left-[-20.18%] top-0 h-full w-[121.81%] max-w-none object-contain object-left-top"
+            />
+          </div>
+
+          {/* Ilya (mobile) */}
+          <div className="absolute right-0 top-[47px] h-[317px] w-[253px] overflow-hidden">
+            <img
+              src={assets.ilyaPortrait}
+              alt=""
+              className="absolute left-[6%] top-[-1.1%] h-[102.26%] w-[100%] max-w-none object-cover object-right-top"
+            />
+          </div>
+          <img
+            src={assets.hero.ilyaVector8}
+            alt=""
+            className="absolute left-[180.09px] top-[280.01px] h-[20.606px] w-[18.735px] -rotate-[22.97deg]"
+          />
+          <img
+            src={assets.hero.ilyaVector3}
+            alt=""
+            className="absolute left-[225px] top-[285.75px] h-[32.232px] w-[32.9px] rotate-[21.38deg]"
+          />
+          <img
+            src={assets.hero.ilyaEllipse3}
+            alt=""
+            className="absolute left-[271.99px] top-[317.43px] h-[10.177px] w-[10.177px]"
+          />
+          <img
+            src={assets.hero.ilyaEllipse4}
+            alt=""
+            className="absolute left-[253.67px] top-[264px] h-[9.668px] w-[9.668px]"
+          />
+          <img
+            src={assets.hero.ilyaEllipse5}
+            alt=""
+            className="absolute left-[218.14px] top-[343.65px] h-[8.651px] w-[8.651px]"
+          />
+          <img
+            src={assets.hero.ilyaEllipse6}
+            alt=""
+            className="absolute left-[210px] top-[335px] h-[6.106px] w-[6.106px]"
+          />
+          <img
+            src={assets.hero.ilyaEllipse7}
+            alt=""
+            className="absolute left-[335.19px] top-[306.8px] h-[10.686px] w-[10.686px]"
+          />
+          <img
+            src={assets.hero.ilyaEllipse8}
+            alt=""
+            className="absolute left-[345.88px] top-[317.48px] h-[7.124px] w-[7.124px]"
+          />
+          <img
+            src={assets.hero.ilyaVector7}
+            alt=""
+            className="absolute left-[292px] top-[337px] h-[63.861px] w-[73.529px] -rotate-[6.86deg]"
+          />
+          <img
+            src={assets.hero.ilyaEllipse9}
+            alt=""
+            className="absolute left-[133.95px] top-[90.54px] h-[8.142px] w-[8.142px]"
+          />
+          <img
+            src={assets.hero.ilyaEllipse11}
+            alt=""
+            className="absolute left-[141.08px] top-[65.6px] h-[9.668px] w-[8.142px] rotate-[16.55deg]"
+          />
+          <img
+            src={assets.hero.ilyaEllipse10}
+            alt=""
+            className="absolute left-[123px] top-[71.71px] h-[9.668px] w-[8.142px] rotate-[17.8deg]"
+          />
+          <img
+            src={assets.hero.ilyaVector10}
+            alt=""
+            className="absolute left-[309px] top-[29px] h-[49.137px] w-[52.77px]"
+          />
+        </div>
+      </div>
+
+      <div className="hidden sm:block">
+        <MariSide />
+        <IlyaSide />
+      </div>
     </>
   );
 }

@@ -8,26 +8,26 @@ type HeroProps = {
 export function Hero({ onRsvp }: HeroProps) {
   return (
     <section
-      className="relative w-full overflow-visible pt-24 pb-24"
-      style={{ minHeight: "900px" }}
+      className="relative w-full overflow-visible pt-8 pb-12 sm:pt-24 sm:pb-24"
+      style={{ minHeight: "760px" }}
       aria-labelledby="hero-title"
     >
-      <div
-        className="pointer-events-none absolute inset-x-0 top-24 bottom-0 z-0"
-        aria-hidden="true"
-      >
+      <div className="pointer-events-none absolute inset-x-0 top-24 bottom-0 z-0 hidden sm:block" aria-hidden="true">
         <HeroIllustrations />
       </div>
 
-      <div className="relative z-10 mx-auto mt-[324px] flex max-w-[1440px] flex-col items-center gap-12 px-[clamp(16px,12vw,420px)] text-center">
+      <div className="relative z-10 mx-auto flex max-w-[1440px] flex-col items-center gap-4 px-4 text-center sm:mt-[324px] sm:gap-12 sm:px-[clamp(16px,12vw,420px)]">
+        <div className="sm:hidden">
+          <HeroIllustrations />
+        </div>
         <div>
           <h1
             id="hero-title"
-            className="mb-[-16px] max-w-[673px] font-sunless text-[clamp(72px,9vw,131px)] leading-none font-normal text-display"
+            className="mb-[-7px] max-w-none font-sunless text-[56px] leading-[56px] font-normal text-display whitespace-nowrap sm:max-w-[673px] sm:mb-[-16px] sm:text-[clamp(72px,9vw,131px)] sm:leading-none"
           >
             Мариша &amp; Иля
           </h1>
-          <p className="max-w-[658px] text-[clamp(24px,3vw,32px)] font-medium leading-normal text-display">
+          <p className="max-w-[658px] text-[20px] font-medium leading-[1.5] text-display sm:text-[clamp(24px,3vw,32px)] sm:leading-normal">
             приглашают вас на свадьбу
           </p>
         </div>
@@ -35,7 +35,7 @@ export function Hero({ onRsvp }: HeroProps) {
           variant="primary"
           size="large"
           onClick={onRsvp}
-          className="text-[24px] leading-[1.4]"
+          className="h-16 w-full max-w-[358px] justify-center text-[20px] leading-[1.5] sm:h-auto sm:w-auto sm:max-w-none sm:text-[24px] sm:leading-[1.4]"
         >
           Я приду
         </Button>

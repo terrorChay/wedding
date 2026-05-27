@@ -23,9 +23,9 @@ export function DateSection() {
             className="h-auto w-full object-contain"
           />
         </div>
-        <div className="flex min-w-0 flex-1 flex-col gap-6">
+        <div className="flex min-w-0 flex-1 flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <SectionHeading title="Дата торжества" accent="10 августа 2026" />
-          <p className="max-w-[460px] text-lg font-medium leading-normal text-neutral">
+          <p className="max-w-[460px] text-lg font-medium leading-normal text-neutral text-center sm:text-left">
             Мы выбрали именно это дату, потому что она очень значима для нас. Мы
             понимаем, что вырваться из рабочих будней будет непросто, поэтому
             особенно ценим ваше присутствие!
@@ -37,6 +37,7 @@ export function DateSection() {
             icon={
               <img src={assets.calendarIcon} alt="" width={24} height={24} />
             }
+            className="self-center sm:self-auto"
           >
             Добавить в календарь
           </Button>

@@ -4,6 +4,7 @@ import { DressCodeSection } from "./components/DressCodeSection/DressCodeSection
 import { Header } from "./components/Header/Header";
 import { Hero } from "./components/Hero/Hero";
 import { LocationSection } from "./components/LocationSection/LocationSection";
+import { MobileMenu } from "./components/MobileMenu/MobileMenu";
 import { ProgramSection } from "./components/ProgramSection/ProgramSection";
 import { WishesSection } from "./components/WishesSection/WishesSection";
 import { RSVP_URL } from "./constants";
@@ -49,7 +50,10 @@ export default function App() {
     <div className="relative min-h-screen w-full bg-bg">
       <div ref={sentinelRef} className="h-px w-full shrink-0" aria-hidden="true" />
 
-      <div className="relative w-full" style={{ minHeight: headerHeight || undefined }}>
+      <div
+        className="relative hidden w-full sm:block"
+        style={{ minHeight: headerHeight || undefined }}
+      >
         <div
           ref={headerInnerRef}
           className={`z-[100] flex w-full justify-center px-4 pt-6 ${
@@ -60,9 +64,11 @@ export default function App() {
         </div>
       </div>
 
+      <MobileMenu onRsvp={onRsvp} />
+
       <Hero onRsvp={onRsvp} />
 
-      <main className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-24 px-4 pb-24">
+      <main className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-16 px-4 pb-16 sm:gap-24 sm:pb-24">
         <DateSection />
         <LocationSection />
         <ProgramSection />
