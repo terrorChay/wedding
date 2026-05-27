@@ -8,7 +8,7 @@ type HeroProps = {
 export function Hero({ onRsvp }: HeroProps) {
   return (
     <section
-      className="relative w-full overflow-visible pt-8 pb-12 sm:pt-24 sm:pb-24"
+      className="relative w-full overflow-x-hidden overflow-y-visible pt-8 pb-12 sm:overflow-visible sm:pt-24 sm:pb-24"
       style={{ minHeight: "760px" }}
       aria-labelledby="hero-title"
     >
@@ -17,7 +17,10 @@ export function Hero({ onRsvp }: HeroProps) {
       </div>
 
       <div className="relative z-10 mx-auto flex max-w-[1440px] flex-col items-center gap-4 px-4 text-center sm:mt-[324px] sm:gap-12 sm:px-[clamp(16px,12vw,420px)]">
-        <div className="sm:hidden">
+        <div
+          className="relative sm:hidden"
+          style={{ width: "100vw", marginLeft: "calc(50% - 50vw)" }}
+        >
           <HeroIllustrations />
         </div>
         <div>

@@ -273,9 +273,9 @@ function IlyaSide() {
 export function HeroIllustrations() {
   return (
     <>
-      <div className="relative mx-auto h-[420px] w-[390px] overflow-visible sm:hidden">
+      <div className="relative h-[420px] w-full overflow-x-hidden overflow-y-visible sm:hidden">
         <div
-          className="pointer-events-none absolute left-0 top-0 h-[504px] w-[470px] origin-top-left scale-[0.83]"
+          className="pointer-events-none absolute left-0 top-0 h-[504px] w-[120.5vw] origin-top-left scale-[0.83]"
           aria-hidden="true"
         >
           {/* Mari (mobile) */}
@@ -314,7 +314,7 @@ export function HeroIllustrations() {
             <img
               src={assets.ilyaPortrait}
               alt=""
-              className="absolute left-[6%] top-[-1.1%] h-[102.26%] w-[100%] max-w-none object-cover object-right-top"
+              className="absolute left-[18%] top-[-1.1%] h-[102.26%] w-[110%] max-w-none object-cover object-right-top"
             />
           </div>
           <img
