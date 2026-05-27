@@ -18,16 +18,16 @@ type Decoration = {
 const MARI_DECORATIONS: Decoration[] = [
   {
     src: assets.hero.mariVector9,
-    left: 18.66,
-    top: 0,
+    left: 10,
+    top: -8,
     width: 77.103,
     height: 75.032,
     rotate: -36.16,
   },
   {
     src: assets.hero.mariVector5,
-    left: 364.34,
-    top: 433.65,
+    left: 210,
+    top: 470,
     width: 72.659,
     height: 114.462,
   },
@@ -165,7 +165,7 @@ function DecorationImg({
 function MariSide() {
   return (
     <div
-      className="pointer-events-none absolute left-0 top-[52px] w-[min(379px,26.3vw)] max-w-none"
+      className="pointer-events-none absolute left-4 top-0 w-[min(533px,37vw)] max-w-none"
       style={{ aspectRatio: `${MARI_W} / ${MARI_H}` }}
       aria-hidden="true"
     >
@@ -182,8 +182,8 @@ function MariSide() {
         <div
           className="absolute rounded-[18px] bg-[#61578b]"
           style={{
-            left: pct(354.19, MARI_W),
-            top: pct(76.68, MARI_H),
+            left: pct(312, MARI_W),
+            top: pct(64, MARI_H),
             width: pct(14.218, MARI_W),
             height: pct(38.928, MARI_H),
             transform: "rotate(36.16deg)",
@@ -193,8 +193,8 @@ function MariSide() {
         <div
           className="absolute rounded-[18px] bg-[#61578b]"
           style={{
-            left: pct(369.53, MARI_W),
-            top: pct(110.26, MARI_H),
+            left: pct(328, MARI_W),
+            top: pct(98, MARI_H),
             width: pct(14.218, MARI_W),
             height: pct(56.863, MARI_H),
             transform: "rotate(70.09deg)",
@@ -204,8 +204,8 @@ function MariSide() {
         <div
           className="absolute rounded-[18px] bg-[#61578b]"
           style={{
-            left: pct(376.78, MARI_W),
-            top: pct(157.29, MARI_H),
+            left: pct(334, MARI_W),
+            top: pct(146, MARI_H),
             width: pct(14.218, MARI_W),
             height: pct(46.278, MARI_H),
             transform: "rotate(95.73deg)",
@@ -236,7 +236,7 @@ function MariSide() {
 function IlyaSide() {
   return (
     <div
-      className="pointer-events-none absolute right-0 top-8 w-[min(559px,38.8vw)] max-w-none"
+      className="pointer-events-none absolute right-0 top-8 w-[min(654px,45.4vw)] max-w-none"
       style={{ aspectRatio: `${ILYA_W} / ${ILYA_H}` }}
       aria-hidden="true"
     >

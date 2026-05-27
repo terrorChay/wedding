@@ -1,8 +1,7 @@
 import { assets } from "../../assets";
 import { Button } from "../Button/Button";
 import { SectionHeading } from "../SectionHeading/SectionHeading";
-
-const MAP_URL = "https://yandex.ru/maps/?text=пос.+Новобутаково,+44";
+import { MAP_URL } from "../../constants";
 
 export function LocationSection() {
   return (
@@ -39,7 +38,7 @@ export function LocationSection() {
               Построить маршрут
             </Button>
             <p className="text-base font-normal leading-normal text-neutral">
-              пос. Новобутаково, 44
+              ул. Свободы 78Бс1
               <br />
               Малый панорамный зал
             </p>

@@ -8,8 +8,8 @@ type HeroProps = {
 export function Hero({ onRsvp }: HeroProps) {
   return (
     <section
-      className="relative w-full overflow-visible pt-24"
-      style={{ minHeight: "776px" }}
+      className="relative w-full overflow-visible pt-24 pb-24"
+      style={{ minHeight: "900px" }}
       aria-labelledby="hero-title"
     >
       <div
@@ -19,7 +19,7 @@ export function Hero({ onRsvp }: HeroProps) {
         <HeroIllustrations />
       </div>
 
-      <div className="relative z-10 mx-auto mt-[324px] flex max-w-[1440px] flex-col items-center gap-12 px-4 text-center">
+      <div className="relative z-10 mx-auto mt-[324px] flex max-w-[1440px] flex-col items-center gap-12 px-[clamp(16px,12vw,420px)] text-center">
         <div>
           <h1
             id="hero-title"
@@ -31,7 +31,12 @@ export function Hero({ onRsvp }: HeroProps) {
             приглашают вас на свадьбу
           </p>
         </div>
-        <Button variant="primary" size="large" onClick={onRsvp}>
+        <Button
+          variant="primary"
+          size="large"
+          onClick={onRsvp}
+          className="text-[24px] leading-[1.4]"
+        >
           Я приду
         </Button>
       </div>

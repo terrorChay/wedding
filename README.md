@@ -22,6 +22,8 @@ npm run build
 npm run preview
 ```
 
+Static assets (images, fonts, SVGs) live in `public/` and are served as-is. Running `npm run build` creates a `dist/` folder with the compiled site — that folder is generated output (already in `.gitignore`), not a second copy you maintain by hand. You can delete `dist/` anytime; it is recreated on the next build.
+
 ## Features
 
 - Full-page layout matching Figma (hero, date, location, program, dress code, wishes)

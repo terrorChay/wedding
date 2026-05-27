@@ -35,7 +35,7 @@ export function Header({ isSticky, onRsvp }: HeaderProps) {
           <a
             key={item.href}
             href={item.href}
-            className="rounded-[32px] px-6 py-3 text-center text-lg font-semibold leading-normal text-neutral transition-colors duration-200 hover:text-secondary-dark min-[1100px]:text-left"
+            className="rounded-[32px] px-6 py-3 text-center text-lg font-semibold leading-normal text-neutral transition-colors duration-200 hover:text-[#e86d87] min-[1100px]:text-left"
           >
             {item.label}
           </a>

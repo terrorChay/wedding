@@ -7,7 +7,7 @@ function addToCalendar() {
   const end = "20260810T230000";
   const title = encodeURIComponent("Свадьба Мариши и Ильи");
   const details = encodeURIComponent("Усадьба «Лесной Берег»");
-  const location = encodeURIComponent("пос. Новобутаково, 44");
+  const location = encodeURIComponent("ул. Свободы 78Бс1");
   const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${start}/${end}&details=${details}&location=${location}`;
   window.open(url, "_blank", "noopener,noreferrer");
 }

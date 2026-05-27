@@ -6,9 +6,10 @@ import { Hero } from "./components/Hero/Hero";
 import { LocationSection } from "./components/LocationSection/LocationSection";
 import { ProgramSection } from "./components/ProgramSection/ProgramSection";
 import { WishesSection } from "./components/WishesSection/WishesSection";
+import { RSVP_URL } from "./constants";
 
 function handleRsvp() {
-  window.alert("Спасибо! Форма подтверждения появится здесь позже.");
+  window.open(RSVP_URL, "_blank", "noopener,noreferrer");
 }
 
 export default function App() {
